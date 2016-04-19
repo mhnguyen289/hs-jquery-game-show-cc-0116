@@ -3,13 +3,13 @@ $(document).ready(function(){
     //door one: You have to place your jQuery Selector in THREE places
     //wherever you see `__`
     //You always want to be using a selector on the div with the class "perspective"
-    $("__").flip({
+    $("#door1").flip({
         trigger: 'manual'
     });
     //insert selector below:
-    $("__").click(function(){
+    $("#door1").click(function(){
         //insert selector below:
-        $("__").flip(true);
+        $("#door1").flip(true);
         $("div.perspective").addClass("done");
         checkWin();
     });
@@ -18,13 +18,13 @@ $(document).ready(function(){
     //wherever you see `__`
     //You always want to be using a selector on the div with the class "perspective"
 
-    $("__").flip({
+    $("div.perspective.door2").flip({
         trigger: 'manual'
     })
     //insert selector below:
-    $("__").click(function(){
+    $("div.perspective.door2").click(function(){
         //insert selector below:
-        $("__").flip(true);
+        $("div.perspective.door2").flip(true);
         $("div.perspective").addClass("done")
         checkWin();
     });
@@ -33,13 +33,13 @@ $(document).ready(function(){
     //wherever you see `__`
     //You always want to be using a selector on the div with the class "perspective"
 
-    $("__").flip({
+    $("div.perspective.door-three").flip({
         //insert selector below:
         trigger: 'manual'
     })
-    $("__").click(function(){
+    $("div.perspective.door-three").click(function(){
         //insert selector below:
-        $("__").flip(true);
+        $("div.perspective.door-three").flip(true);
         $("div.perspective").addClass("done");
         checkWin();
     });
